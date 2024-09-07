@@ -38,6 +38,8 @@
             this.btnFrenar = new System.Windows.Forms.Button();
             this.btnOnOff = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbLuces = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,6 +52,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lbEstado
             // 
@@ -68,6 +71,7 @@
             this.lbVelocidad.Size = new System.Drawing.Size(54, 13);
             this.lbVelocidad.TabIndex = 2;
             this.lbVelocidad.Text = "Velocidad";
+            this.lbVelocidad.Click += new System.EventHandler(this.lbVelocidad_Click);
             // 
             // btnEncender
             // 
@@ -117,6 +121,7 @@
             this.btnOnOff.TabIndex = 7;
             this.btnOnOff.Text = "ON/ OFF";
             this.btnOnOff.UseVisualStyleBackColor = true;
+            this.btnOnOff.Click += new System.EventHandler(this.btnOnOff_Click);
             // 
             // label1
             // 
@@ -127,11 +132,29 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Luces";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(348, 196);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Velocidad";
+            // 
+            // lbLuces
+            // 
+            this.lbLuces.AutoSize = true;
+            this.lbLuces.Location = new System.Drawing.Point(479, 288);
+            this.lbLuces.Name = "lbLuces";
+            this.lbLuces.Size = new System.Drawing.Size(0, 13);
+            this.lbLuces.TabIndex = 10;
+            // 
             // FrmVehiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 404);
+            this.Controls.Add(this.lbLuces);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOnOff);
             this.Controls.Add(this.btnFrenar);
@@ -141,6 +164,7 @@
             this.Controls.Add(this.lbVelocidad);
             this.Controls.Add(this.lbEstado);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label2);
             this.Name = "FrmVehiculo";
             this.Text = "FrmVehiculo";
             this.Load += new System.EventHandler(this.FrmVehiculo_Load);
@@ -161,5 +185,7 @@
         private System.Windows.Forms.Button btnFrenar;
         private System.Windows.Forms.Button btnOnOff;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbLuces;
     }
 }

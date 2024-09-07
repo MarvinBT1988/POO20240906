@@ -13,6 +13,7 @@ namespace ConsoleAppPOO2024.INTRO
         public string Suspencion;
         public int Velocidades;
         public string Estado;
+        private bool Luces;
         public void Encender() {
             Estado= "Encendido";
         }
@@ -25,8 +26,13 @@ namespace ConsoleAppPOO2024.INTRO
         public void Apagar() {
             Estado = "Apagado";
         }
-        public bool EncenderLuces(bool enceder) {
-            return true;
+        public bool EncenderLuces(bool enceder) {            ;
+            return enceder;
+        }
+        public bool LucesOnOff()
+        {
+            Luces = !Luces;
+            return Luces;
         }
     }
 }
