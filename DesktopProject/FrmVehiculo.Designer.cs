@@ -77,6 +77,7 @@
             this.btnEncender.TabIndex = 3;
             this.btnEncender.Text = "Encender";
             this.btnEncender.UseVisualStyleBackColor = true;
+            this.btnEncender.Click += new System.EventHandler(this.btnEncender_Click);
             // 
             // btnApagar
             // 
@@ -86,6 +87,7 @@
             this.btnApagar.TabIndex = 4;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // btnAcelerar
             // 
@@ -95,6 +97,7 @@
             this.btnAcelerar.TabIndex = 5;
             this.btnAcelerar.Text = "Acelerar";
             this.btnAcelerar.UseVisualStyleBackColor = true;
+            this.btnAcelerar.Click += new System.EventHandler(this.btnAcelerar_Click);
             // 
             // btnFrenar
             // 
@@ -104,6 +107,7 @@
             this.btnFrenar.TabIndex = 6;
             this.btnFrenar.Text = "Frenar";
             this.btnFrenar.UseVisualStyleBackColor = true;
+            this.btnFrenar.Click += new System.EventHandler(this.btnFrenar_Click);
             // 
             // btnOnOff
             // 

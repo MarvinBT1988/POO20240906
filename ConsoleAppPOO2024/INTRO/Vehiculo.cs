@@ -12,11 +12,19 @@ namespace ConsoleAppPOO2024.INTRO
         public string Marca;
         public string Suspencion;
         public int Velocidades;
-
-        public void Encender() { }
-        public void Acelarar() { }
-        public void Frenar() { }
-        public void Apagar() { }
+        public string Estado;
+        public void Encender() {
+            Estado= "Encendido";
+        }
+        public void Acelarar() {
+            Velocidades += 5;
+        }
+        public void Frenar() {
+            Velocidades = 0;
+        }
+        public void Apagar() {
+            Estado = "Apagado";
+        }
         public bool EncenderLuces(bool enceder) {
             return true;
         }
