@@ -32,7 +32,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbEstado = new System.Windows.Forms.Label();
             this.lbVelocidad = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEncender = new System.Windows.Forms.Button();
+            this.btnApagar = new System.Windows.Forms.Button();
+            this.btnAcelerar = new System.Windows.Forms.Button();
+            this.btnFrenar = new System.Windows.Forms.Button();
+            this.btnOnOff = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,26 +69,77 @@
             this.lbVelocidad.TabIndex = 2;
             this.lbVelocidad.Text = "Velocidad";
             // 
-            // button1
+            // btnEncender
             // 
-            this.button1.Location = new System.Drawing.Point(482, 111);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 27);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEncender.Location = new System.Drawing.Point(482, 111);
+            this.btnEncender.Name = "btnEncender";
+            this.btnEncender.Size = new System.Drawing.Size(92, 27);
+            this.btnEncender.TabIndex = 3;
+            this.btnEncender.Text = "Encender";
+            this.btnEncender.UseVisualStyleBackColor = true;
+            // 
+            // btnApagar
+            // 
+            this.btnApagar.Location = new System.Drawing.Point(580, 111);
+            this.btnApagar.Name = "btnApagar";
+            this.btnApagar.Size = new System.Drawing.Size(92, 27);
+            this.btnApagar.TabIndex = 4;
+            this.btnApagar.Text = "Apagar";
+            this.btnApagar.UseVisualStyleBackColor = true;
+            // 
+            // btnAcelerar
+            // 
+            this.btnAcelerar.Location = new System.Drawing.Point(482, 144);
+            this.btnAcelerar.Name = "btnAcelerar";
+            this.btnAcelerar.Size = new System.Drawing.Size(92, 27);
+            this.btnAcelerar.TabIndex = 5;
+            this.btnAcelerar.Text = "Acelerar";
+            this.btnAcelerar.UseVisualStyleBackColor = true;
+            // 
+            // btnFrenar
+            // 
+            this.btnFrenar.Location = new System.Drawing.Point(580, 144);
+            this.btnFrenar.Name = "btnFrenar";
+            this.btnFrenar.Size = new System.Drawing.Size(92, 27);
+            this.btnFrenar.TabIndex = 6;
+            this.btnFrenar.Text = "Frenar";
+            this.btnFrenar.UseVisualStyleBackColor = true;
+            // 
+            // btnOnOff
+            // 
+            this.btnOnOff.Location = new System.Drawing.Point(482, 247);
+            this.btnOnOff.Name = "btnOnOff";
+            this.btnOnOff.Size = new System.Drawing.Size(190, 27);
+            this.btnOnOff.TabIndex = 7;
+            this.btnOnOff.Text = "ON/ OFF";
+            this.btnOnOff.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(479, 231);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Luces";
             // 
             // FrmVehiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 404);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnOnOff);
+            this.Controls.Add(this.btnFrenar);
+            this.Controls.Add(this.btnAcelerar);
+            this.Controls.Add(this.btnApagar);
+            this.Controls.Add(this.btnEncender);
             this.Controls.Add(this.lbVelocidad);
             this.Controls.Add(this.lbEstado);
             this.Controls.Add(this.pictureBox1);
             this.Name = "FrmVehiculo";
             this.Text = "FrmVehiculo";
+            this.Load += new System.EventHandler(this.FrmVehiculo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -95,6 +151,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbEstado;
         private System.Windows.Forms.Label lbVelocidad;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEncender;
+        private System.Windows.Forms.Button btnApagar;
+        private System.Windows.Forms.Button btnAcelerar;
+        private System.Windows.Forms.Button btnFrenar;
+        private System.Windows.Forms.Button btnOnOff;
+        private System.Windows.Forms.Label label1;
     }
 }

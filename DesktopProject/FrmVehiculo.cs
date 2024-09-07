@@ -16,5 +16,10 @@ namespace DesktopProject
         {
             InitializeComponent();
         }
+
+        private void FrmVehiculo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
